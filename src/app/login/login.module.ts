@@ -7,11 +7,14 @@ import { IonicModule } from '@ionic/angular';
 import { LoginPageRoutingModule } from './login-routing.module';
 
 import { LoginPage } from './login.page';
-
+//modulo para formularos reeactivos
+//se debe importar en cada pagina que usa para usarlo
+//mato el FormsModule y lo remplazo con el reactive
+import { ReactiveFormsModule } from '@angular/forms'
 @NgModule({
   imports: [
     CommonModule,
-    FormsModule,
+    ReactiveFormsModule,
     IonicModule,
     LoginPageRoutingModule
   ],
